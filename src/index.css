@@ -1,0 +1,140 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  letter-spacing: .1rem;
+  line-height: 1.1;
+  margin-bottom: .75rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+ 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 12px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, .14);
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+ul .machine-list:not(:last-child) {
+  border-bottom: 1px solid #c0c5ce;
+}
+
+.machine-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.healthscore {
+  padding: 4px;
+  border: 1px solid #bfd6f6;
+  border-radius: 100px;
+}
+
+.sensors {
+  padding: 4px;
+  background-color: #36454f;
+  border-radius: 100px;
+  color: #fff;
+  font-size: .85rem;
+}
+
+.app__header {
+  padding: 0 1em;
+}
+
+.app__logo {
+  margin: 1em 0;
+}
+
+.app__logo img {
+  width: 174px;
+}
+
+.app {
+  padding: 0 1em;
+}
+
+.app__content {
+  padding-top: 4em;
+}
+
+ul .asset__item:not(:last-child) {
+  border-bottom: 1px solid #c0c5ce;
+}
+
+.asset__item img {
+  width: 15px;
+  margin-right: 1em;
+}
+
+.status-list {
+  margin: 2em 0;
+}
+
+.asset__quantity {
+  color: #3b7dd8;
+}
+
+.asset {
+  display: flex;
+  flex-direction: column;
+}
+
+.asset__name {
+  font-size: 1.2rem;
+}
+
+.asset__img {
+  padding: 1em;
+  background-color: #c0c5ce;
+  border-radius: 10px;
+}
+
+.asset__img img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
