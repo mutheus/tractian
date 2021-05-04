@@ -11,13 +11,17 @@ const Machine = ({ assets = arr }) => {
     return trim(item.name) === machine;
   })
   
-  return(
+  return (
     <div className="asset">
-      <h1 className="asset__name">{asset.name}</h1>
-      
-      <div className="asset__img">
-        <img src={asset.image} />
-      </div>
+      { asset &&
+        <>
+          <h1 className="asset__name">{asset.name}</h1>
+        
+          <div className="asset__img">
+            <img src={asset.image} />
+          </div>
+        </>
+      }
     </div>
   );
 }

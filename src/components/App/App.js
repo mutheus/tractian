@@ -16,6 +16,8 @@ const App = () => {
       'https://my-json-server.typicode.com/tractian/fake-api/assets',
     );
     
+    let data = await result.data;
+    
     const counting = result.data.reduce((acc, asset) => {
       if (!acc[asset.status] && asset.status) {
         acc[asset.status] = 1;
@@ -25,11 +27,11 @@ const App = () => {
       
       return acc;
     }, {});
-      
+    
     const status = Object.keys(counting);
     const count = Object.values(counting);
     
-    setAssets(result.data);
+    setAssets(data);
     setStatus(status);
     setCount(count);
   }, [])
@@ -49,7 +51,7 @@ const App = () => {
               <Route exact path="/">
                 <AllMachines status={status} assets={assets} count={count} />
               </Route>
-              <Route path="/:machine">
+              <Route exact path="/:machine">
                 <Machine assets={assets}/>
               </Route>
             </Switch>
