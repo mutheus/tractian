@@ -81,23 +81,23 @@ ul .machine-list:not(:last-child) {
   font-size: .85rem;
 }
 
-.app__header {
+.header {
   padding: 0 1em;
 }
 
-.app__logo {
+.header__logo {
   margin: 1em 0;
 }
 
-.app__logo img {
+.header__logo img {
   width: 174px;
 }
 
-.app {
+.wrapper {
   padding: 0 1em;
 }
 
-.app__content {
+.container {
   padding-top: 4em;
 }
 
@@ -110,7 +110,7 @@ ul .asset__item:not(:last-child) {
   margin-right: 1em;
 }
 
-.status-list {
+.machines__list {
   margin: 2em 0;
 }
 
